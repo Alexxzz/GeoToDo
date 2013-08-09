@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>PKRevealController 1.0b2</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="3"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>PKRevealController</Name>
+			<Path>Classes/PKRevealController.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>PKRevealControllerContainerView</Name>
+			<Path>Classes/PKRevealControllerContainerView.html</Path>
+		</Node>
+		
+		<Node id="3">
+			<Name>UIViewController(PKRevealController)</Name>
+			<Path>Categories/UIViewController+PKRevealController.html</Path>
+		</Node>
+		
+		
+	</Library>
+</DocSetNodes>

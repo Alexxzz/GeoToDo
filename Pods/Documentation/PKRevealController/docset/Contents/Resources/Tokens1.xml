@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PKRevealController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PKRevealController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/setFrontViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIViewController *frontViewController</Declaration>
+			
+			
+			<Anchor>//api/name/frontViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PKRevealController/frontViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIViewController *frontViewController</Declaration>
+			
+			
+			<Anchor>//api/name/frontViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/setLeftViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIViewController *leftViewController</Declaration>
+			
+			
+			<Anchor>//api/name/leftViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PKRevealController/leftViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIViewController *leftViewController</Declaration>
+			
+			
+			<Anchor>//api/name/leftViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/setRightViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIViewController *rightViewController</Declaration>
+			
+			
+			<Anchor>//api/name/rightViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PKRevealController/rightViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIViewController *rightViewController</Declaration>
+			
+			
+			<Anchor>//api/name/rightViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/setOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDictionary *options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PKRevealController/options</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDictionary *options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/setRevealPanGestureRecognizer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIPanGestureRecognizer *revealPanGestureRecognizer</Declaration>
+			
+			
+			<Anchor>//api/name/revealPanGestureRecognizer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PKRevealController/revealPanGestureRecognizer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UIPanGestureRecognizer *revealPanGestureRecognizer</Declaration>
+			
+			
+			<Anchor>//api/name/revealPanGestureRecognizer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/setRevealResetTapGestureRecognizer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UITapGestureRecognizer *revealResetTapGestureRecognizer</Declaration>
+			
+			
+			<Anchor>//api/name/revealResetTapGestureRecognizer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PKRevealController/revealResetTapGestureRecognizer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) UITapGestureRecognizer *revealResetTapGestureRecognizer</Declaration>
+			
+			
+			<Anchor>//api/name/revealResetTapGestureRecognizer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/setState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) PKRevealControllerState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PKRevealController/state</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) PKRevealControllerState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/setIsPresentationModeActive:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isPresentationModeActive</Declaration>
+			
+			
+			<Anchor>//api/name/isPresentationModeActive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PKRevealController/isPresentationModeActive</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isPresentationModeActive</Declaration>
+			
+			
+			<Anchor>//api/name/isPresentationModeActive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PKRevealController/revealControllerWithFrontViewController:leftViewController:rightViewController:options:</TokenIdentifier>
+			<Abstract type="html">Initializers. Left/right controllers can be added/exchanged/removed dynamically after initialization.</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)revealControllerWithFrontViewController:(UIViewController *)frontViewController leftViewController:(UIViewController *)leftViewController rightViewController:(UIViewController *)rightViewController options:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/revealControllerWithFrontViewController:leftViewController:rightViewController:options:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PKRevealController/revealControllerWithFrontViewController:leftViewController:options:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)revealControllerWithFrontViewController:(UIViewController *)frontViewController leftViewController:(UIViewController *)leftViewController options:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/revealControllerWithFrontViewController:leftViewController:options:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PKRevealController/revealControllerWithFrontViewController:rightViewController:options:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>+ (instancetype)revealControllerWithFrontViewController:(UIViewController *)frontViewController rightViewController:(UIViewController *)rightViewController options:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/revealControllerWithFrontViewController:rightViewController:options:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/initWithFrontViewController:leftViewController:rightViewController:options:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrontViewController:(UIViewController *)frontViewController leftViewController:(UIViewController *)leftViewController rightViewController:(UIViewController *)rightViewController options:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrontViewController:leftViewController:rightViewController:options:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/initWithFrontViewController:leftViewController:options:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrontViewController:(UIViewController *)frontViewController leftViewController:(UIViewController *)leftViewController options:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrontViewController:leftViewController:options:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/initWithFrontViewController:rightViewController:options:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrontViewController:(UIViewController *)frontViewController rightViewController:(UIViewController *)rightViewController options:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrontViewController:rightViewController:options:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/showViewController:</TokenIdentifier>
+			<Abstract type="html">Shifts the front view to the position that&apos;s best suited to present the desired controller&apos;s view. (Animates by default)</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (void)showViewController:(UIViewController *)controller</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>UIViewController</Name>
+					<Abstract type="html">controller - This is either the left or the right view controller (if present - respectively).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/showViewController:animated:completion:</TokenIdentifier>
+			<Abstract type="html">Shifts the front view to the position that&apos;s best suited to present the desired controller&apos;s view.</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (void)showViewController:(UIViewController *)controller animated:(BOOL)animated completion:(PKDefaultCompletionHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>PKDefaultCompletionHandler</Name>
+					<Abstract type="html">completion - Executed on the main thread after the show animation is completed.</Abstract>
+				</Parameter><Parameter>
+					<Name>UIViewController</Name>
+					<Abstract type="html">controller - This is either the left or the right view controller (if present - respectively).</Abstract>
+				</Parameter><Parameter>
+					<Name>BOOL</Name>
+					<Abstract type="html">animated - Whether the frame adjustments should be animated or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showViewController:animated:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/enterPresentationModeAnimated:completion:</TokenIdentifier>
+			<Abstract type="html">Takes the currently active controller and enters presentation mode, thereby revealing the maximum width
+of the view, which can be specified via the left/rightViewWidthRange properties.</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (void)enterPresentationModeAnimated:(BOOL)animated completion:(PKDefaultCompletionHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>PKDefaultCompletionHandler</Name>
+					<Abstract type="html">completion - Executed on the main thread after the show animation is completed.</Abstract>
+				</Parameter><Parameter>
+					<Name>BOOL</Name>
+					<Abstract type="html">animated - Whether the frame adjustments should be animated or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enterPresentationModeAnimated:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/resignPresentationModeEntirely:animated:completion:</TokenIdentifier>
+			<Abstract type="html">If active, this method will resign the presentation mode.</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (void)resignPresentationModeEntirely:(BOOL)entirely animated:(BOOL)animated completion:(PKDefaultCompletionHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>PKDefaultCompletionHandler</Name>
+					<Abstract type="html">completion - Executed on the main thread after the show animation is completed.</Abstract>
+				</Parameter><Parameter>
+					<Name>BOOL</Name>
+					<Abstract type="html">animated - Whether the frame adjustments should be animated or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resignPresentationModeEntirely:animated:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/setFrontViewController:</TokenIdentifier>
+			<Abstract type="html">Exchanges the current front view controller for a new one.</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setFrontViewController:(UIViewController *)frontViewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>UIViewController</Name>
+					<Abstract type="html">frontViewController - Thew new front view controller.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setFrontViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/setFrontViewController:focusAfterChange:completion:</TokenIdentifier>
+			<Abstract type="html">Exchanges the current front view controller for a new one.</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setFrontViewController:(UIViewController *)frontViewController focusAfterChange:(BOOL)focus completion:(PKDefaultCompletionHandler)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>PKDefaultCompletionHandler</Name>
+					<Abstract type="html">completion - Executed on the main thread after the show animation is completed.</Abstract>
+				</Parameter><Parameter>
+					<Name>UIViewController</Name>
+					<Abstract type="html">frontViewController - The new front view controller.</Abstract>
+				</Parameter><Parameter>
+					<Name>BOOL</Name>
+					<Abstract type="html">focus - Whether the front view controller&apos;s view animates back to its center position after it was set.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setFrontViewController:focusAfterChange:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/setLeftViewController:</TokenIdentifier>
+			<Abstract type="html">Exchanges the current left view controller for a new one.</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setLeftViewController:(UIViewController *)leftViewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>UIViewController</Name>
+					<Abstract type="html">leftViewController - Thew new left view controller.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLeftViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/setRightViewController:</TokenIdentifier>
+			<Abstract type="html">Exchanges the current right view controller for a new one.</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setRightViewController:(UIViewController *)rightViewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>UIViewController</Name>
+					<Abstract type="html">rightViewController - Thew new right view controller.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setRightViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/setMinimumWidth:maximumWidth:forViewController:</TokenIdentifier>
+			<Abstract type="html">Adjusts the minimum and maximum reveal width of any given view controller&apos;s view.</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setMinimumWidth:(CGFloat)minWidth maximumWidth:(CGFloat)maxWidth forViewController:(UIViewController *)controller</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>CGFloat</Name>
+					<Abstract type="html">minWidth - The maximum width of the view to be shown when overdrawing (if applicable) or
+entering presentation mode.</Abstract>
+				</Parameter><Parameter>
+					<Name>UIViewController</Name>
+					<Abstract type="html">controller - The view controller whose view reveal sizing is being adjusted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setMinimumWidth:maximumWidth:forViewController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/focusedController</TokenIdentifier>
+			<Abstract type="html">UIViewController - Returns the currently focused controller, i.e. the one that&apos;s most prominent at any given point in time.</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (UIViewController *)focusedController</Declaration>
+			
+			<ReturnValue><Abstract type="html">UIViewController - Returns the currently focused controller, i.e. the one that&apos;s most prominent at any given point in time.</Abstract></ReturnValue>
+			<Anchor>//api/name/focusedController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/type</TokenIdentifier>
+			<Abstract type="html">PKRevealControllerType - Returns the controller type, i.e. whether it has a left side, a right side, both or none.</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (PKRevealControllerType)type</Declaration>
+			
+			<ReturnValue><Abstract type="html">PKRevealControllerType - Returns the controller type, i.e. whether it has a left side, a right side, both or none.</Abstract></ReturnValue>
+			<Anchor>//api/name/type</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/hasRightViewController</TokenIdentifier>
+			<Abstract type="html">BOOL - Returns YES if the reveal controller has a right side, NO otherwise.</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasRightViewController</Declaration>
+			
+			<ReturnValue><Abstract type="html">BOOL - Returns YES if the reveal controller has a right side, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasRightViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealController/hasLeftViewController</TokenIdentifier>
+			<Abstract type="html">BOOL - Returns YES if the reveal controller has a left side, NO otherwise.</Abstract>
+			<DeclaredIn>PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasLeftViewController</Declaration>
+			
+			<ReturnValue><Abstract type="html">BOOL - Returns YES if the reveal controller has a left side, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasLeftViewController</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

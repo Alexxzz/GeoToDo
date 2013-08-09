@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>ViewUtils 1.1 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">ViewUtils 1.1 </a></h1>
+				<a id="developerHome" href="index.html">Nick Lockwood</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ViewUtils 1.1 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ViewUtils 1.1 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h2>Purpose</h2>
+
+<p>ViewUtils is a collection of category methods that extend UIView with all the handy little properties and functionality that you always wished were built-in to begin with. ViewUtils covers:</p>
+
+<ul>
+<li>Nib loading &ndash; makes it easy to load views from nibs without a UIViewController</li>
+<li>Layout &ndash; set and get position and width/height properties individually</li>
+<li>Searching &ndash; retrieve subviews based on class, tag or arbitrary predicates</li>
+<li>Responder &ndash; find the first responder within a given view</li>
+</ul>
+
+
+<h2>Supported OS &amp; SDK Versions</h2>
+
+<ul>
+<li>Supported build target &ndash; iOS 6.0 / Mac OS 10.8 (Xcode 4.5, Apple LLVM compiler 4.1)</li>
+<li>Earliest supported deployment target &ndash; iOS 5.0 / Mac OS 10.7</li>
+<li>Earliest compatible deployment target &ndash; iOS 4.3 / Mac OS 10.6</li>
+</ul>
+
+
+<p>NOTE: &lsquo;Supported&rsquo; means that the library has been tested with this version. &lsquo;Compatible&rsquo; means that the library should work on this iOS version (i.e. it doesn&rsquo;t rely on any unavailable SDK features) but is no longer being tested for compatibility and may require tweaking or bug fixes to run correctly.</p>
+
+<h2>ARC Compatibility</h2>
+
+<p>ViewUtils works with both ARC and non-ARC projects. There is no need to exclude ViewUtils files from the ARC validation process, or to convert ViewUtils using the ARC conversion tool.</p>
+
+<h2>Thread Safety</h2>
+
+<p>UIView is inherently single-threaded, so ViewUtils methods should only be used on the main thread.</p>
+
+<h2>Installation</h2>
+
+<p>To use the ViewUtils categories in an app, just drag the ViewUtils.h and .m files (demo files and assets are not needed) into your project and import the header file into any class where you wish to make use of the ViewUtils functionality, or include it in your prefix.pch file to make it available globally within your project.</p>
+
+<h2>Extension Methods</h2>
+
+<p>ViewUtils extends UIView with the following methods:</p>
+
+<pre><code>+ (id)instanceWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)bundleOrNil owner:(id)owner;
+</code></pre>
+
+<p>This method loads a view from a nib file. The view to be loaded must be the first object in the file. This method is useful for loading views such as UITableViewCells, or iCarousel item views. The nib file is cached, so subequent loads will perform better.</p>
+
+<pre><code>- (void)loadContentsWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)bundleOrNil;
+</code></pre>
+
+<p>This method is similar to <code>instanceWithNibName:</code>, but instead of returning the first view in the nib file, this method loads that view and then adds it as a subview to the view on which the method is called, resizing the loaded view to fit the bounds of the superview if neccesary. This is especially useful if you want to create a complex view composed of reusable subviews, each stored in their own nib file.</p>
+
+<pre><code>- (UIView *)viewMatchingPredicate:(NSPredicate *)predicate;
+</code></pre>
+
+<p>Returns either the view itself of the first subview that matches the specified predicate. If no subview matches, the method returns nil.</p>
+
+<pre><code>- (UIView *)viewWithTag:(NSInteger)tag ofClass:(Class)class;
+</code></pre>
+
+<p>Returns either the view itself of the first subview that has the specified tag value, <em>and</em> is of the specified class. This is safer than the regular <code>viewWithTag:</code> method.</p>
+
+<pre><code>- (UIView *)viewOfClass:(Class)class;
+</code></pre>
+
+<p>Returns either the view itself of the first subview of the specified class.</p>
+
+<pre><code>- (NSArray *)viewsMatchingPredicate:(NSPredicate *)predicate;
+- (NSArray *)viewsWithTag:(NSInteger)tag;
+- (NSArray *)viewsWithTag:(NSInteger)tag ofClass:(Class)class;
+- (NSArray *)viewsOfClass:(Class)class;
+</code></pre>
+
+<p>These methods work exactly like their single-view equivalents, but instead of returning the first view that matches, they return all views that match. The search is performed in a depth-first fashion.</p>
+
+<pre><code>- (UIView *)firstSuperviewMatchingPredicate:(NSPredicate *)predicate;
+- (UIView *)firstSuperviewOfClass:(Class)class;
+- (UIView *)firstSuperviewWithTag:(NSInteger)tag;
+- (UIView *)firstSuperviewWithTag:(NSInteger)tag ofClass:(Class)class;
+</code></pre>
+
+<p>These methods work like the viewMatching/Of/Width versions, but work <em>up</em> the view hierarchy instead of down and will return the first parent view that matches the specified criteria.</p>
+
+<pre><code>- (BOOL)viewOrAnySuperviewMatchesPredicate:(NSPredicate *)predicate;
+- (BOOL)viewOrAnySuperviewIsKindOfClass:(Class)class;
+</code></pre>
+
+<p>This method returns YES if the view, or any superview in in the chain matches the criteria. This is useful for event handling, for example if you&rsquo;d like to know if a given touch was either on or within a given control or control type, e.g. so you can ignore gestures performed on specific views.</p>
+
+<pre><code>- (BOOL)isSuperviewOfView:(UIView *)view;
+- (BOOL)isSubviewOfView:(UIView *)view;
+</code></pre>
+
+<p>These methods allow you to determine if a view is a child of another view. These methods will search the entire superview chain, not just a single level, so if one view is the superview <em>of the superview</em> of the other one, it will still return YES.</p>
+
+<pre><code>- (UIViewController *)firstViewController;
+</code></pre>
+
+<p>This method uses the responder chain to identify the first view controller in the controller chain that is responsible for the view. So for example, if this method is called on a button, it will return the view controller that hosts the view that contains that button.</p>
+
+<pre><code>- (UIView *)firstResponder;
+</code></pre>
+
+<p>This method returns the first responder if it is a subview of the view on which the method is called, or nil if not. If you don&rsquo;t know which subview tree the first responder might be located in, calling this method on the main window or the root view of the current frontmost view controller should return the desired result.</p>
+
+<pre><code>- (void)setLeft:(CGFloat)left right:(CGFloat)right;
+- (void)setWidth:(CGFloat)width right:(CGFloat)right;
+- (void)setTop:(CGFloat)top bottom:(CGFloat)bottom;
+- (void)setHeight:(CGFloat)height bottom:(CGFloat)bottom;
+</code></pre>
+
+<p>It&rsquo;s often fiddly to set both the left and right edges of a view, or set the width without affecting the right-hand edge because the properties are linked. These setter methods make it a little easier to do this by allowing you to set both properties with a single method call.</p>
+
+<pre><code>- (void)crossfadeWithDuration:(NSTimeInterval)duration;
+- (void)crossfadeWithDuration:(NSTimeInterval)duration completion:(void (^)(void))completion;
+</code></pre>
+
+<p>These methods use Core Animation to perform a crossfade transition of the specified duration. A crossfade is often useful if you want to animate the change of some view property that does not already support animation. A typical example would be changing the text in a UILabel or the image in a UIImageView.</p>
+
+<h2>Extension Properties</h2>
+
+<p>ViewUtils extends UIView with the following properties for setting the frame position and dimensions:</p>
+
+<pre><code>@property (nonatomic, assign) CGPoint origin;
+</code></pre>
+
+<p>The position within the superview of the view origin (the top-left corner). This is equivalent to <code>view.frame.origin</code>.</p>
+
+<pre><code>@property (nonatomic, assign) CGSize size;
+</code></pre>
+
+<p>The outer dimensions of the view. This is equivalent to <code>view.frame.size</code>.</p>
+
+<pre><code>@property (nonatomic, assign) CGFloat top;
+@property (nonatomic, assign) CGFloat left;
+@property (nonatomic, assign) CGFloat bottom;
+@property (nonatomic, assign) CGFloat right;
+</code></pre>
+
+<p>The positions of the four corners of the view within the superview. These positions are all relative to the top-left corner of the superview, so (for example) the <code>view.bottom</code> property is equivalent to <code>view.top + view.height</code>.</p>
+
+<pre><code>@property (nonatomic, assign) CGFloat width;
+@property (nonatomic, assign) CGFloat height;
+</code></pre>
+
+<p>The outer dimensions of the view. These are equivalent to <code>view.size.width</code> and  <code>view.size.height</code> respectively.</p>
+
+<pre><code>@property (nonatomic, assign) CGFloat x;
+@property (nonatomic, assign) CGFloat y;
+</code></pre>
+
+<p>The position of the anchor point for the view (typically the center) within the superview. These are equivqlent to <code>view.center.x</code> and <code>view.center.y</code> respectively.</p>
+
+<pre><code>@property (nonatomic, assign) CGSize boundsSize;
+@property (nonatomic, assign) CGFloat boundsWidth;
+@property (nonatomic, assign) CGFloat boundsHeight;
+</code></pre>
+
+<p>The dimensions of the view bounds (the inner size). The bounds size is useful when the view has been transformed and you can no longer rely on the frame size to get or set the content dimensions accurately.</p>
+
+<pre><code>@property (nonatomic, readonly) CGRect contentBounds;
+</code></pre>
+
+<p>Quite often you wish to position a subview to exactly fill its superview, but in order to do that you must contruct a CGRect with the width and height of the superview&rsquo;s bounds and an origin of 0,0. Unfortunately there is no guarantee that the <code>superview.bounds</code> will have an origin of 0,0 because in a UIWindow that has been rotated, or a UIScrollView that has been scrolled or zoomed, the bounds origin will have been changed in order to correctly align the contents within the view frame. The contentBounds property returns a rect that matches the bounds size, but always has an origin of 0,0.</p>
+
+<pre><code>@property (nonatomic, readonly) CGPoint contentCenter;
+</code></pre>
+
+<p>Quite often you wish to position a subview in the exact center of its superview, but calculating the center of a view is a tedious piece of code to write. The contentCenter property returns this position.</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					
+						
+					<div class="index-column">
+						
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/UIView+ViewUtils.html">UIView(ViewUtils)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Nick Lockwood. All rights reserved. (Last updated: 2013-02-20)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

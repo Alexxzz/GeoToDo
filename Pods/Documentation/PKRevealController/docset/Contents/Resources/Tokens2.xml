@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PKRevealControllerContainerView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PKRevealControllerContainerView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealControllerContainerView.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealControllerContainerView/setViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealControllerContainerView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak, readwrite) UIViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PKRevealControllerContainerView/viewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealControllerContainerView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak, readwrite) UIViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealControllerContainerView/initForController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealControllerContainerView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initForController:(UIViewController *)controller</Declaration>
+			
+			
+			<Anchor>//api/name/initForController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealControllerContainerView/initForController:shadow:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealControllerContainerView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initForController:(UIViewController *)controller shadow:(BOOL)hasShadow</Declaration>
+			
+			
+			<Anchor>//api/name/initForController:shadow:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealControllerContainerView/enableUserInteractionForContainedView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealControllerContainerView.h</DeclaredIn>			
+			
+			<Declaration>- (void)enableUserInteractionForContainedView</Declaration>
+			
+			
+			<Anchor>//api/name/enableUserInteractionForContainedView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealControllerContainerView/disableUserInteractionForContainedView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealControllerContainerView.h</DeclaredIn>			
+			
+			<Declaration>- (void)disableUserInteractionForContainedView</Declaration>
+			
+			
+			<Anchor>//api/name/disableUserInteractionForContainedView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealControllerContainerView/refreshShadowWithAnimationDuration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealControllerContainerView.h</DeclaredIn>			
+			
+			<Declaration>- (void)refreshShadowWithAnimationDuration:(NSTimeInterval)duration</Declaration>
+			
+			
+			<Anchor>//api/name/refreshShadowWithAnimationDuration:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PKRevealControllerContainerView/hasShadow</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PKRevealControllerContainerView.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasShadow</Declaration>
+			
+			
+			<Anchor>//api/name/hasShadow</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

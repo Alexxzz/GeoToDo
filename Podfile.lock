@@ -1,0 +1,35 @@
+PODS:
+  - BlocksKit (1.8.1):
+    - libffi
+  - CocoaLumberjack (1.6)
+  - libffi (3.0.13)
+  - MagicalRecord (2.1)
+  - MBProgressHUD (0.5)
+  - OCHamcrest (1.9)
+  - OCMockito (0.23):
+    - OCHamcrest (= 1.9)
+  - PKRevealController (1.0b2)
+  - ViewUtils (1.1)
+
+DEPENDENCIES:
+  - BlocksKit
+  - CocoaLumberjack
+  - MagicalRecord
+  - MBProgressHUD
+  - OCHamcrest
+  - OCMockito
+  - PKRevealController
+  - ViewUtils
+
+SPEC CHECKSUMS:
+  BlocksKit: 18102744fd7c44b54f1e54ce6ffe9258bcb5df81
+  CocoaLumberjack: 0f2fa7090a23f13261072d882e017c688300efbe
+  libffi: 64ef39353e747bb2b25e1026afd96a157bf9231c
+  MagicalRecord: 64e7184c240087a45e9588a722eaf05b0ad837f7
+  MBProgressHUD: b23ee11c42253d6d804e8e0bfabdc334e8b2571f
+  OCHamcrest: f8393efd5a49d91879be573635d6183effacc0ab
+  OCMockito: 2223021dd82697fc536c403d6850d2ed8ffae578
+  PKRevealController: 631e6a3db833a0c660203c2dba0963109549ec8a
+  ViewUtils: 577b16fc6b770dff79f544c5c542ad278dd688ea
+
+COCOAPODS: 0.22.1

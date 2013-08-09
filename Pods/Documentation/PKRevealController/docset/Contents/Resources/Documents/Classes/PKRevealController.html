@@ -1,0 +1,1418 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PKRevealController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PKRevealController 1.0b2 </a></h1>
+				<a id="developerHome" href="../index.html">Philip Kluz</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PKRevealController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/frontViewController">&nbsp;&nbsp;&nbsp;&nbsp;frontViewController</option>
+	
+	<option value="//api/name/isPresentationModeActive">&nbsp;&nbsp;&nbsp;&nbsp;isPresentationModeActive</option>
+	
+	<option value="//api/name/leftViewController">&nbsp;&nbsp;&nbsp;&nbsp;leftViewController</option>
+	
+	<option value="//api/name/options">&nbsp;&nbsp;&nbsp;&nbsp;options</option>
+	
+	<option value="//api/name/revealPanGestureRecognizer">&nbsp;&nbsp;&nbsp;&nbsp;revealPanGestureRecognizer</option>
+	
+	<option value="//api/name/revealResetTapGestureRecognizer">&nbsp;&nbsp;&nbsp;&nbsp;revealResetTapGestureRecognizer</option>
+	
+	<option value="//api/name/rightViewController">&nbsp;&nbsp;&nbsp;&nbsp;rightViewController</option>
+	
+	<option value="//api/name/state">&nbsp;&nbsp;&nbsp;&nbsp;state</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/revealControllerWithFrontViewController:leftViewController:options:">&nbsp;&nbsp;&nbsp;&nbsp;+ revealControllerWithFrontViewController:leftViewController:options:</option>
+	
+	<option value="//api/name/revealControllerWithFrontViewController:leftViewController:rightViewController:options:">&nbsp;&nbsp;&nbsp;&nbsp;+ revealControllerWithFrontViewController:leftViewController:rightViewController:options:</option>
+	
+	<option value="//api/name/revealControllerWithFrontViewController:rightViewController:options:">&nbsp;&nbsp;&nbsp;&nbsp;+ revealControllerWithFrontViewController:rightViewController:options:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/enterPresentationModeAnimated:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- enterPresentationModeAnimated:completion:</option>
+	
+	<option value="//api/name/focusedController">&nbsp;&nbsp;&nbsp;&nbsp;- focusedController</option>
+	
+	<option value="//api/name/hasLeftViewController">&nbsp;&nbsp;&nbsp;&nbsp;- hasLeftViewController</option>
+	
+	<option value="//api/name/hasRightViewController">&nbsp;&nbsp;&nbsp;&nbsp;- hasRightViewController</option>
+	
+	<option value="//api/name/initWithFrontViewController:leftViewController:options:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithFrontViewController:leftViewController:options:</option>
+	
+	<option value="//api/name/initWithFrontViewController:leftViewController:rightViewController:options:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithFrontViewController:leftViewController:rightViewController:options:</option>
+	
+	<option value="//api/name/initWithFrontViewController:rightViewController:options:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithFrontViewController:rightViewController:options:</option>
+	
+	<option value="//api/name/resignPresentationModeEntirely:animated:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- resignPresentationModeEntirely:animated:completion:</option>
+	
+	<option value="//api/name/setFrontViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- setFrontViewController:</option>
+	
+	<option value="//api/name/setFrontViewController:focusAfterChange:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- setFrontViewController:focusAfterChange:completion:</option>
+	
+	<option value="//api/name/setLeftViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- setLeftViewController:</option>
+	
+	<option value="//api/name/setMinimumWidth:maximumWidth:forViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- setMinimumWidth:maximumWidth:forViewController:</option>
+	
+	<option value="//api/name/setRightViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- setRightViewController:</option>
+	
+	<option value="//api/name/showViewController:">&nbsp;&nbsp;&nbsp;&nbsp;- showViewController:</option>
+	
+	<option value="//api/name/showViewController:animated:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- showViewController:animated:completion:</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;- type</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/frontViewController">frontViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isPresentationModeActive">isPresentationModeActive</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/leftViewController">leftViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/options">options</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/revealPanGestureRecognizer">revealPanGestureRecognizer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/revealResetTapGestureRecognizer">revealResetTapGestureRecognizer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rightViewController">rightViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/state">state</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/revealControllerWithFrontViewController:leftViewController:options:">revealControllerWithFrontViewController:leftViewController:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/revealControllerWithFrontViewController:leftViewController:rightViewController:options:">revealControllerWithFrontViewController:leftViewController:rightViewController:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/revealControllerWithFrontViewController:rightViewController:options:">revealControllerWithFrontViewController:rightViewController:options:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enterPresentationModeAnimated:completion:">enterPresentationModeAnimated:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/focusedController">focusedController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasLeftViewController">hasLeftViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasRightViewController">hasRightViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithFrontViewController:leftViewController:options:">initWithFrontViewController:leftViewController:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithFrontViewController:leftViewController:rightViewController:options:">initWithFrontViewController:leftViewController:rightViewController:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithFrontViewController:rightViewController:options:">initWithFrontViewController:rightViewController:options:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resignPresentationModeEntirely:animated:completion:">resignPresentationModeEntirely:animated:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFrontViewController:">setFrontViewController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setFrontViewController:focusAfterChange:completion:">setFrontViewController:focusAfterChange:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLeftViewController:">setLeftViewController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setMinimumWidth:maximumWidth:forViewController:">setMinimumWidth:maximumWidth:forViewController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRightViewController:">setRightViewController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showViewController:">showViewController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showViewController:animated:completion:">showViewController:animated:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PKRevealController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PKRevealController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">UIGestureRecognizerDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PKRevealController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/frontViewController">&nbsp;&nbsp;frontViewController</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/leftViewController">&nbsp;&nbsp;leftViewController</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rightViewController">&nbsp;&nbsp;rightViewController</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/options">&nbsp;&nbsp;options</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/revealPanGestureRecognizer">&nbsp;&nbsp;revealPanGestureRecognizer</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/revealResetTapGestureRecognizer">&nbsp;&nbsp;revealResetTapGestureRecognizer</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/state">&nbsp;&nbsp;state</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isPresentationModeActive">&nbsp;&nbsp;isPresentationModeActive</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/revealControllerWithFrontViewController:leftViewController:rightViewController:options:">+&nbsp;revealControllerWithFrontViewController:leftViewController:rightViewController:options:</a></code>
+		<span class="tooltip"><p>Initializers. Left/right controllers can be added/exchanged/removed dynamically after initialization.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/revealControllerWithFrontViewController:leftViewController:options:">+&nbsp;revealControllerWithFrontViewController:leftViewController:options:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/revealControllerWithFrontViewController:rightViewController:options:">+&nbsp;revealControllerWithFrontViewController:rightViewController:options:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithFrontViewController:leftViewController:rightViewController:options:">&ndash;&nbsp;initWithFrontViewController:leftViewController:rightViewController:options:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithFrontViewController:leftViewController:options:">&ndash;&nbsp;initWithFrontViewController:leftViewController:options:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithFrontViewController:rightViewController:options:">&ndash;&nbsp;initWithFrontViewController:rightViewController:options:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showViewController:">&ndash;&nbsp;showViewController:</a></code>
+		<span class="tooltip"><p>Shifts the front view to the position that&rsquo;s best suited to present the desired controller&rsquo;s view. (Animates by default)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showViewController:animated:completion:">&ndash;&nbsp;showViewController:animated:completion:</a></code>
+		<span class="tooltip"><p>Shifts the front view to the position that&rsquo;s best suited to present the desired controller&rsquo;s view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enterPresentationModeAnimated:completion:">&ndash;&nbsp;enterPresentationModeAnimated:completion:</a></code>
+		<span class="tooltip"><p>Takes the currently active controller and enters presentation mode, thereby revealing the maximum width
+of the view, which can be specified via the left/rightViewWidthRange properties.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resignPresentationModeEntirely:animated:completion:">&ndash;&nbsp;resignPresentationModeEntirely:animated:completion:</a></code>
+		<span class="tooltip"><p>If active, this method will resign the presentation mode.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setFrontViewController:">&ndash;&nbsp;setFrontViewController:</a></code>
+		<span class="tooltip"><p>Exchanges the current front view controller for a new one.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setFrontViewController:focusAfterChange:completion:">&ndash;&nbsp;setFrontViewController:focusAfterChange:completion:</a></code>
+		<span class="tooltip"><p>Exchanges the current front view controller for a new one.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLeftViewController:">&ndash;&nbsp;setLeftViewController:</a></code>
+		<span class="tooltip"><p>Exchanges the current left view controller for a new one.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setRightViewController:">&ndash;&nbsp;setRightViewController:</a></code>
+		<span class="tooltip"><p>Exchanges the current right view controller for a new one.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setMinimumWidth:maximumWidth:forViewController:">&ndash;&nbsp;setMinimumWidth:maximumWidth:forViewController:</a></code>
+		<span class="tooltip"><p>Adjusts the minimum and maximum reveal width of any given view controller&rsquo;s view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/focusedController">&ndash;&nbsp;focusedController</a></code>
+		<span class="tooltip"><p>UIViewController &ndash; Returns the currently focused controller, i.e. the one that&rsquo;s most prominent at any given point in time.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&ndash;&nbsp;type</a></code>
+		<span class="tooltip"><p>PKRevealControllerType &ndash; Returns the controller type, i.e. whether it has a left side, a right side, both or none.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasRightViewController">&ndash;&nbsp;hasRightViewController</a></code>
+		<span class="tooltip"><p>BOOL &ndash; Returns YES if the reveal controller has a right side, NO otherwise.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasLeftViewController">&ndash;&nbsp;hasLeftViewController</a></code>
+		<span class="tooltip"><p>BOOL &ndash; Returns YES if the reveal controller has a left side, NO otherwise.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/frontViewController" title="frontViewController"></a>
+	<h3 class="subsubtitle method-title">frontViewController</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) UIViewController *frontViewController</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isPresentationModeActive" title="isPresentationModeActive"></a>
+	<h3 class="subsubtitle method-title">isPresentationModeActive</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) BOOL isPresentationModeActive</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/leftViewController" title="leftViewController"></a>
+	<h3 class="subsubtitle method-title">leftViewController</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) UIViewController *leftViewController</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/options" title="options"></a>
+	<h3 class="subsubtitle method-title">options</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSDictionary *options</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/revealPanGestureRecognizer" title="revealPanGestureRecognizer"></a>
+	<h3 class="subsubtitle method-title">revealPanGestureRecognizer</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) UIPanGestureRecognizer *revealPanGestureRecognizer</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/revealResetTapGestureRecognizer" title="revealResetTapGestureRecognizer"></a>
+	<h3 class="subsubtitle method-title">revealResetTapGestureRecognizer</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) UITapGestureRecognizer *revealResetTapGestureRecognizer</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rightViewController" title="rightViewController"></a>
+	<h3 class="subsubtitle method-title">rightViewController</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) UIViewController *rightViewController</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/state" title="state"></a>
+	<h3 class="subsubtitle method-title">state</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) PKRevealControllerState state</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/revealControllerWithFrontViewController:leftViewController:options:" title="revealControllerWithFrontViewController:leftViewController:options:"></a>
+	<h3 class="subsubtitle method-title">revealControllerWithFrontViewController:leftViewController:options:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)revealControllerWithFrontViewController:(UIViewController *)<em>frontViewController</em> leftViewController:(UIViewController *)<em>leftViewController</em> options:(NSDictionary *)<em>options</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/revealControllerWithFrontViewController:leftViewController:rightViewController:options:" title="revealControllerWithFrontViewController:leftViewController:rightViewController:options:"></a>
+	<h3 class="subsubtitle method-title">revealControllerWithFrontViewController:leftViewController:rightViewController:options:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializers. Left/right controllers can be added/exchanged/removed dynamically after initialization.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)revealControllerWithFrontViewController:(UIViewController *)<em>frontViewController</em> leftViewController:(UIViewController *)<em>leftViewController</em> rightViewController:(UIViewController *)<em>rightViewController</em> options:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializers. Left/right controllers can be added/exchanged/removed dynamically after initialization.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/revealControllerWithFrontViewController:rightViewController:options:" title="revealControllerWithFrontViewController:rightViewController:options:"></a>
+	<h3 class="subsubtitle method-title">revealControllerWithFrontViewController:rightViewController:options:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)revealControllerWithFrontViewController:(UIViewController *)<em>frontViewController</em> rightViewController:(UIViewController *)<em>rightViewController</em> options:(NSDictionary *)<em>options</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/enterPresentationModeAnimated:completion:" title="enterPresentationModeAnimated:completion:"></a>
+	<h3 class="subsubtitle method-title">enterPresentationModeAnimated:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Takes the currently active controller and enters presentation mode, thereby revealing the maximum width
+of the view, which can be specified via the left/rightViewWidthRange properties.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)enterPresentationModeAnimated:(BOOL)<em>animated</em> completion:(PKDefaultCompletionHandler)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>PKDefaultCompletionHandler</em></dt>
+			<dd><p>completion &ndash; Executed on the main thread after the show animation is completed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>BOOL</em></dt>
+			<dd><p>animated &ndash; Whether the frame adjustments should be animated or not.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Takes the currently active controller and enters presentation mode, thereby revealing the maximum width
+of the view, which can be specified via the left/rightViewWidthRange properties.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/focusedController" title="focusedController"></a>
+	<h3 class="subsubtitle method-title">focusedController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>UIViewController &ndash; Returns the currently focused controller, i.e. the one that&rsquo;s most prominent at any given point in time.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIViewController *)focusedController</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>UIViewController &ndash; Returns the currently focused controller, i.e. the one that&rsquo;s most prominent at any given point in time.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasLeftViewController" title="hasLeftViewController"></a>
+	<h3 class="subsubtitle method-title">hasLeftViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>BOOL &ndash; Returns YES if the reveal controller has a left side, NO otherwise.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)hasLeftViewController</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>BOOL &ndash; Returns YES if the reveal controller has a left side, NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasRightViewController" title="hasRightViewController"></a>
+	<h3 class="subsubtitle method-title">hasRightViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>BOOL &ndash; Returns YES if the reveal controller has a right side, NO otherwise.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)hasRightViewController</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>BOOL &ndash; Returns YES if the reveal controller has a right side, NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithFrontViewController:leftViewController:options:" title="initWithFrontViewController:leftViewController:options:"></a>
+	<h3 class="subsubtitle method-title">initWithFrontViewController:leftViewController:options:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithFrontViewController:(UIViewController *)<em>frontViewController</em> leftViewController:(UIViewController *)<em>leftViewController</em> options:(NSDictionary *)<em>options</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithFrontViewController:leftViewController:rightViewController:options:" title="initWithFrontViewController:leftViewController:rightViewController:options:"></a>
+	<h3 class="subsubtitle method-title">initWithFrontViewController:leftViewController:rightViewController:options:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithFrontViewController:(UIViewController *)<em>frontViewController</em> leftViewController:(UIViewController *)<em>leftViewController</em> rightViewController:(UIViewController *)<em>rightViewController</em> options:(NSDictionary *)<em>options</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithFrontViewController:rightViewController:options:" title="initWithFrontViewController:rightViewController:options:"></a>
+	<h3 class="subsubtitle method-title">initWithFrontViewController:rightViewController:options:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithFrontViewController:(UIViewController *)<em>frontViewController</em> rightViewController:(UIViewController *)<em>rightViewController</em> options:(NSDictionary *)<em>options</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resignPresentationModeEntirely:animated:completion:" title="resignPresentationModeEntirely:animated:completion:"></a>
+	<h3 class="subsubtitle method-title">resignPresentationModeEntirely:animated:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If active, this method will resign the presentation mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resignPresentationModeEntirely:(BOOL)<em>entirely</em> animated:(BOOL)<em>animated</em> completion:(PKDefaultCompletionHandler)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>PKDefaultCompletionHandler</em></dt>
+			<dd><p>completion &ndash; Executed on the main thread after the show animation is completed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>BOOL</em></dt>
+			<dd><p>animated &ndash; Whether the frame adjustments should be animated or not.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If active, this method will resign the presentation mode.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setFrontViewController:" title="setFrontViewController:"></a>
+	<h3 class="subsubtitle method-title">setFrontViewController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Exchanges the current front view controller for a new one.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setFrontViewController:(UIViewController *)<em>frontViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>UIViewController</em></dt>
+			<dd><p><a href="#//api/name/frontViewController">frontViewController</a> &ndash; Thew new front view controller.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Exchanges the current front view controller for a new one.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setFrontViewController:focusAfterChange:completion:" title="setFrontViewController:focusAfterChange:completion:"></a>
+	<h3 class="subsubtitle method-title">setFrontViewController:focusAfterChange:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Exchanges the current front view controller for a new one.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setFrontViewController:(UIViewController *)<em>frontViewController</em> focusAfterChange:(BOOL)<em>focus</em> completion:(PKDefaultCompletionHandler)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>PKDefaultCompletionHandler</em></dt>
+			<dd><p>completion &ndash; Executed on the main thread after the show animation is completed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>UIViewController</em></dt>
+			<dd><p><a href="#//api/name/frontViewController">frontViewController</a> &ndash; The new front view controller.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>BOOL</em></dt>
+			<dd><p>focus &ndash; Whether the front view controller&rsquo;s view animates back to its center position after it was set.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Exchanges the current front view controller for a new one.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setLeftViewController:" title="setLeftViewController:"></a>
+	<h3 class="subsubtitle method-title">setLeftViewController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Exchanges the current left view controller for a new one.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setLeftViewController:(UIViewController *)<em>leftViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>UIViewController</em></dt>
+			<dd><p><a href="#//api/name/leftViewController">leftViewController</a> &ndash; Thew new left view controller.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Exchanges the current left view controller for a new one.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setMinimumWidth:maximumWidth:forViewController:" title="setMinimumWidth:maximumWidth:forViewController:"></a>
+	<h3 class="subsubtitle method-title">setMinimumWidth:maximumWidth:forViewController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adjusts the minimum and maximum reveal width of any given view controller&rsquo;s view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setMinimumWidth:(CGFloat)<em>minWidth</em> maximumWidth:(CGFloat)<em>maxWidth</em> forViewController:(UIViewController *)<em>controller</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>CGFloat</em></dt>
+			<dd><p>minWidth &ndash; The maximum width of the view to be shown when overdrawing (if applicable) or
+entering presentation mode.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>UIViewController</em></dt>
+			<dd><p>controller &ndash; The view controller whose view reveal sizing is being adjusted.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adjusts the minimum and maximum reveal width of any given view controller&rsquo;s view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setRightViewController:" title="setRightViewController:"></a>
+	<h3 class="subsubtitle method-title">setRightViewController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Exchanges the current right view controller for a new one.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setRightViewController:(UIViewController *)<em>rightViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>UIViewController</em></dt>
+			<dd><p><a href="#//api/name/rightViewController">rightViewController</a> &ndash; Thew new right view controller.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Exchanges the current right view controller for a new one.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showViewController:" title="showViewController:"></a>
+	<h3 class="subsubtitle method-title">showViewController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shifts the front view to the position that&rsquo;s best suited to present the desired controller&rsquo;s view. (Animates by default)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showViewController:(UIViewController *)<em>controller</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>UIViewController</em></dt>
+			<dd><p>controller &ndash; This is either the left or the right view controller (if present &ndash; respectively).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Shifts the front view to the position that&rsquo;s best suited to present the desired controller&rsquo;s view. (Animates by default)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showViewController:animated:completion:" title="showViewController:animated:completion:"></a>
+	<h3 class="subsubtitle method-title">showViewController:animated:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shifts the front view to the position that&rsquo;s best suited to present the desired controller&rsquo;s view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showViewController:(UIViewController *)<em>controller</em> animated:(BOOL)<em>animated</em> completion:(PKDefaultCompletionHandler)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>PKDefaultCompletionHandler</em></dt>
+			<dd><p>completion &ndash; Executed on the main thread after the show animation is completed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>UIViewController</em></dt>
+			<dd><p>controller &ndash; This is either the left or the right view controller (if present &ndash; respectively).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>BOOL</em></dt>
+			<dd><p>animated &ndash; Whether the frame adjustments should be animated or not.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Shifts the front view to the position that&rsquo;s best suited to present the desired controller&rsquo;s view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>PKRevealControllerType &ndash; Returns the controller type, i.e. whether it has a left side, a right side, both or none.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PKRevealControllerType)type</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>PKRevealControllerType &ndash; Returns the controller type, i.e. whether it has a left side, a right side, both or none.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PKRevealController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Philip Kluz. All rights reserved. (Last updated: 2013-02-20)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

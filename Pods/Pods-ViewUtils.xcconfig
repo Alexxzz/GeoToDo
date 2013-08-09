@@ -1,0 +1,1 @@
+PODS_VIEWUTILS_OTHER_LDFLAGS = -framework QuartzCore

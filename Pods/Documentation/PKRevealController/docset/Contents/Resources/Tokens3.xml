@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIViewController+PKRevealController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIViewController(PKRevealController)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIViewController+PKRevealController.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIViewController(PKRevealController)/setRevealController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIViewController+PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readwrite) PKRevealController *revealController</Declaration>
+			
+			
+			<Anchor>//api/name/revealController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIViewController(PKRevealController)/revealController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIViewController+PKRevealController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readwrite) PKRevealController *revealController</Declaration>
+			
+			
+			<Anchor>//api/name/revealController</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

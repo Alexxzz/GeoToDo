@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /var/root/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.MGBox2-2.0.0.docset
+Time: 2013-02-19 23:46:50 +0000

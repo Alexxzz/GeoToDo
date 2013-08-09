@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /var/root/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.MBProgressHUD-0.5.docset
+Time: 2013-02-19 23:09:49 +0000

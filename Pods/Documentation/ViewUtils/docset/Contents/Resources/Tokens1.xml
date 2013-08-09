@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIView+ViewUtils.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIView(ViewUtils)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/instanceWithNibName:bundle:owner:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>+ (id)instanceWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)bundleOrNil owner:(id)owner</Declaration>
+			
+			
+			<Anchor>//api/name/instanceWithNibName:bundle:owner:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/loadContentsWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadContentsWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)bundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/loadContentsWithNibName:bundle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/viewMatchingPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (UIView *)viewMatchingPredicate:(NSPredicate *)predicate</Declaration>
+			
+			
+			<Anchor>//api/name/viewMatchingPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/viewWithTag:ofClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (UIView *)viewWithTag:(NSInteger)tag ofClass:(Class)class</Declaration>
+			
+			
+			<Anchor>//api/name/viewWithTag:ofClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/viewOfClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (UIView *)viewOfClass:(Class)class</Declaration>
+			
+			
+			<Anchor>//api/name/viewOfClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/viewsMatchingPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)viewsMatchingPredicate:(NSPredicate *)predicate</Declaration>
+			
+			
+			<Anchor>//api/name/viewsMatchingPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/viewsWithTag:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)viewsWithTag:(NSInteger)tag</Declaration>
+			
+			
+			<Anchor>//api/name/viewsWithTag:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/viewsWithTag:ofClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)viewsWithTag:(NSInteger)tag ofClass:(Class)class</Declaration>
+			
+			
+			<Anchor>//api/name/viewsWithTag:ofClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/viewsOfClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)viewsOfClass:(Class)class</Declaration>
+			
+			
+			<Anchor>//api/name/viewsOfClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/firstSuperviewMatchingPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (UIView *)firstSuperviewMatchingPredicate:(NSPredicate *)predicate</Declaration>
+			
+			
+			<Anchor>//api/name/firstSuperviewMatchingPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/firstSuperviewOfClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (UIView *)firstSuperviewOfClass:(Class)class</Declaration>
+			
+			
+			<Anchor>//api/name/firstSuperviewOfClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/firstSuperviewWithTag:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (UIView *)firstSuperviewWithTag:(NSInteger)tag</Declaration>
+			
+			
+			<Anchor>//api/name/firstSuperviewWithTag:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/firstSuperviewWithTag:ofClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (UIView *)firstSuperviewWithTag:(NSInteger)tag ofClass:(Class)class</Declaration>
+			
+			
+			<Anchor>//api/name/firstSuperviewWithTag:ofClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/viewOrAnySuperviewMatchesPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)viewOrAnySuperviewMatchesPredicate:(NSPredicate *)predicate</Declaration>
+			
+			
+			<Anchor>//api/name/viewOrAnySuperviewMatchesPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/viewOrAnySuperviewIsKindOfClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)viewOrAnySuperviewIsKindOfClass:(Class)class</Declaration>
+			
+			
+			<Anchor>//api/name/viewOrAnySuperviewIsKindOfClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/isSuperviewOfView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isSuperviewOfView:(UIView *)view</Declaration>
+			
+			
+			<Anchor>//api/name/isSuperviewOfView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/isSubviewOfView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isSubviewOfView:(UIView *)view</Declaration>
+			
+			
+			<Anchor>//api/name/isSubviewOfView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/firstViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (UIViewController *)firstViewController</Declaration>
+			
+			
+			<Anchor>//api/name/firstViewController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/firstResponder</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (UIView *)firstResponder</Declaration>
+			
+			
+			<Anchor>//api/name/firstResponder</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setOrigin:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGPoint origin</Declaration>
+			
+			
+			<Anchor>//api/name/origin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/origin</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGPoint origin</Declaration>
+			
+			
+			<Anchor>//api/name/origin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/size</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setTop:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat top</Declaration>
+			
+			
+			<Anchor>//api/name/top</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/top</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat top</Declaration>
+			
+			
+			<Anchor>//api/name/top</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setLeft:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat left</Declaration>
+			
+			
+			<Anchor>//api/name/left</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/left</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat left</Declaration>
+			
+			
+			<Anchor>//api/name/left</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setBottom:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat bottom</Declaration>
+			
+			
+			<Anchor>//api/name/bottom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/bottom</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat bottom</Declaration>
+			
+			
+			<Anchor>//api/name/bottom</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setRight:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat right</Declaration>
+			
+			
+			<Anchor>//api/name/right</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/right</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat right</Declaration>
+			
+			
+			<Anchor>//api/name/right</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setWidth:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat width</Declaration>
+			
+			
+			<Anchor>//api/name/width</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/width</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat width</Declaration>
+			
+			
+			<Anchor>//api/name/width</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setHeight:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat height</Declaration>
+			
+			
+			<Anchor>//api/name/height</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/height</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat height</Declaration>
+			
+			
+			<Anchor>//api/name/height</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setX:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat x</Declaration>
+			
+			
+			<Anchor>//api/name/x</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/x</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat x</Declaration>
+			
+			
+			<Anchor>//api/name/x</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setY:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat y</Declaration>
+			
+			
+			<Anchor>//api/name/y</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/y</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat y</Declaration>
+			
+			
+			<Anchor>//api/name/y</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setBoundsSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGSize boundsSize</Declaration>
+			
+			
+			<Anchor>//api/name/boundsSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/boundsSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGSize boundsSize</Declaration>
+			
+			
+			<Anchor>//api/name/boundsSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setBoundsWidth:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat boundsWidth</Declaration>
+			
+			
+			<Anchor>//api/name/boundsWidth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/boundsWidth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat boundsWidth</Declaration>
+			
+			
+			<Anchor>//api/name/boundsWidth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setBoundsHeight:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat boundsHeight</Declaration>
+			
+			
+			<Anchor>//api/name/boundsHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/boundsHeight</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat boundsHeight</Declaration>
+			
+			
+			<Anchor>//api/name/boundsHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setContentBounds:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGRect contentBounds</Declaration>
+			
+			
+			<Anchor>//api/name/contentBounds</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/contentBounds</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGRect contentBounds</Declaration>
+			
+			
+			<Anchor>//api/name/contentBounds</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setContentCenter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGPoint contentCenter</Declaration>
+			
+			
+			<Anchor>//api/name/contentCenter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIView(ViewUtils)/contentCenter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGPoint contentCenter</Declaration>
+			
+			
+			<Anchor>//api/name/contentCenter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setLeft:right:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (void)setLeft:(CGFloat)left right:(CGFloat)right</Declaration>
+			
+			
+			<Anchor>//api/name/setLeft:right:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setWidth:right:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (void)setWidth:(CGFloat)width right:(CGFloat)right</Declaration>
+			
+			
+			<Anchor>//api/name/setWidth:right:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setTop:bottom:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (void)setTop:(CGFloat)top bottom:(CGFloat)bottom</Declaration>
+			
+			
+			<Anchor>//api/name/setTop:bottom:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/setHeight:bottom:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (void)setHeight:(CGFloat)height bottom:(CGFloat)bottom</Declaration>
+			
+			
+			<Anchor>//api/name/setHeight:bottom:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/crossfadeWithDuration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (void)crossfadeWithDuration:(NSTimeInterval)duration</Declaration>
+			
+			
+			<Anchor>//api/name/crossfadeWithDuration:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(ViewUtils)/crossfadeWithDuration:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ViewUtils.h</DeclaredIn>			
+			
+			<Declaration>- (void)crossfadeWithDuration:(NSTimeInterval)duration completion:(void ( ^ ) ( void ))completion</Declaration>
+			
+			
+			<Anchor>//api/name/crossfadeWithDuration:completion:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
