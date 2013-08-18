@@ -12,6 +12,4 @@
 
 @interface GTDTasksViewController : UITableViewController
 
-- (instancetype)initWithDataStorage:(GTDDataStorage *)dataStorage;
-
 @end

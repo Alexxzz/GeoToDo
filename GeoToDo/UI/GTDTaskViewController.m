@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 az. All rights reserved.
 //
 
-#import "GTDNewTaskViewController.h"
+#import "GTDTaskViewController.h"
 #import "GTDEditTableViewCell.h"
 #import "GTDNotesTableViewCell.h"
 #import "GTDDetailedTableViewCell.h"
@@ -25,11 +25,11 @@ typedef NS_ENUM(NSUInteger, eNewTaskCell) {
     eNewTaskCell_count
 };
 
-@interface GTDNewTaskViewController () <GTDNotesTableViewCellDelegate>
+@interface GTDTaskViewController () <GTDNotesTableViewCellDelegate>
 
 @end
 
-@implementation GTDNewTaskViewController
+@implementation GTDTaskViewController
 {
     CGFloat _notesHeight;
     
@@ -44,15 +44,6 @@ typedef NS_ENUM(NSUInteger, eNewTaskCell) {
     GTDDataStorage *_dataStorage;
 }
 
-- (instancetype)initWithTask:(Task *)task dataStorage:(GTDDataStorage *)dataStorage {
-    self = [super initWithStyle:UITableViewStyleGrouped];
-    if (self) {
-        _task = task;
-        _dataStorage = dataStorage;
-    }
-    return self;
-}
-
 - (void)registerCellClass:(Class)class {
     NSString *cellClass = NSStringFromClass(class);
     [self.tableView registerNib:[UINib nibWithNibName:cellClass bundle:nil]
@@ -61,6 +52,8 @@ typedef NS_ENUM(NSUInteger, eNewTaskCell) {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _dataStorage = [GTDDataStorage sharedInstance];
     
     [self registerCellClass:[GTDEditTableViewCell class]];
     [self registerCellClass:[GTDNotesTableViewCell class]];

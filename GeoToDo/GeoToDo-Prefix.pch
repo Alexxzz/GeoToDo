@@ -15,4 +15,5 @@
     #import <CoreData+MagicalRecord.h>
     #import <ViewUtils/ViewUtils.h>
     #import "Globals.h"
+    #import <PKRevealController.h>
 #endif

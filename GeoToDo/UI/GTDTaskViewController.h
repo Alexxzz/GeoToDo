@@ -11,8 +11,6 @@
 @class Task;
 @class GTDDataStorage;
 
-@interface GTDNewTaskViewController : UITableViewController
-
-- (instancetype)initWithTask:(Task *)task dataStorage:(GTDDataStorage *)dataStorage;
+@interface GTDTaskViewController : UITableViewController
 
 @end

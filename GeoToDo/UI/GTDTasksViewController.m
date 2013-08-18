@@ -7,7 +7,7 @@
 //
 
 #import "GTDTasksViewController.h"
-#import "GTDNewTaskViewController.h"
+#import "GTDTaskViewController.h"
 #import <PKRevealController.h>
 #import "GTDDataStorage.h"
 #import "Task.h"
@@ -23,42 +23,18 @@
     GTDDataStorage *_dataStorage;
 }
 
-- (instancetype)initWithDataStorage:(GTDDataStorage *)dataStorage {
-    self = [super initWithStyle:UITableViewStylePlain];
-    if (self) {
-        _dataStorage = dataStorage;
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _dataStorage = [GTDDataStorage sharedInstance];
+    
     self.title = NSLocalizedString(@"Tasks", @"Tasks navigation bar title");
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-                                                                                           target:self
-                                                                                           action:@selector(onNewButton:)];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"leftMenu.png"]
-                                                                             style:UIBarButtonItemStylePlain
-                                                                            target:self
-                                                                            action:@selector(onShowMenu:)];
-    
-    [self.tableView registerNib:[UINib nibWithNibName:@"GTDTaskTableViewCell" bundle:nil]
-         forCellReuseIdentifier:@"GTDTaskTableViewCell"];
+    //[self.tableView registerNib:[UINib nibWithNibName:@"GTDTaskTableViewCell" bundle:nil] forCellReuseIdentifier:@"GTDTaskTableViewCell"];
     
     _dateFormatter = [[NSDateFormatter alloc] init];
     _dateFormatter.timeStyle = NSDateFormatterMediumStyle;
     _dateFormatter.dateStyle = NSDateFormatterMediumStyle;
-}
-
-- (void)onShowMenu:(id)sender {
-    [self.navigationController.revealController showViewController:self.navigationController.revealController.leftViewController];
-}
-
-- (void)onNewButton:(id)sender {
-    GTDNewTaskViewController *newTaskVC = [GTDNewTaskViewController new];
-    [self.navigationController pushViewController:newTaskVC animated:YES];
 }
 
 #pragma mark - Table view data source
@@ -89,8 +65,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Task *task = [self.fetchedController objectAtIndexPath:indexPath];
-    GTDNewTaskViewController *editTask = [[GTDNewTaskViewController alloc] initWithTask:task dataStorage:_dataStorage];
-    [self.navigationController pushViewController:editTask animated:YES];
+    //GTDTaskViewController *editTask = [[GTDTaskViewController alloc] initWithTask:task dataStorage:_dataStorage];
+    //[self.navigationController pushViewController:editTask animated:YES];
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

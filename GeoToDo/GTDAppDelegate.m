@@ -7,30 +7,14 @@
 //
 
 #import "GTDAppDelegate.h"
-#import "GTDLeftViewController.h"
-#import "GTDTasksViewController.h"
 #import "GTDDataStorage.h"
-#import <PKRevealController.h>
 
-@implementation GTDAppDelegate {
-    PKRevealController *_mainViewContrller;
-}
+@implementation GTDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     GTDDataStorage *sharedInstance = [[GTDDataStorage alloc] init];
     [GTDDataStorage registerInstance:sharedInstance];
-    
-    GTDLeftViewController *leftVC = [[GTDLeftViewController alloc] initWithDataStorage:sharedInstance];
-    
-    _mainViewContrller = [[PKRevealController alloc] initWithFrontViewController:[UIViewController new]
-                                                              leftViewController:leftVC
-                                                                         options:nil];
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window setRootViewController:_mainViewContrller];
-    [self.window makeKeyAndVisible];
-    
+
     return YES;
 }
 
