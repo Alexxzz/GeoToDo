@@ -42,6 +42,14 @@ static GTDDataStorage *__instance = nil;
     return [Task MR_findAllSortedBy:@"dueDate" ascending:YES withPredicate:predicate];
 }
 
+- (NSFetchedResultsController *)tasksFetchedResultsControllerWithDelegate:(id<NSFetchedResultsControllerDelegate>)delegate {
+    return [Task MR_fetchAllGroupedBy:nil
+                        withPredicate:[NSPredicate predicateWithFormat:@"done == 0"]
+                             sortedBy:@"dueDate"
+                            ascending:YES
+                             delegate:delegate];
+}
+
 #pragma mark - Saving
 - (void)saveAsyncWithCompletion:(void(^)(BOOL success, NSError *error))completion {
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {

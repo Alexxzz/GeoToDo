@@ -21,6 +21,7 @@
 {
     NSDateFormatter *_dateFormatter;
     GTDDataStorage *_dataStorage;
+    NSFetchedResultsController *_fetchedController;
 }
 
 - (void)viewDidLoad {
@@ -30,21 +31,38 @@
     
     self.title = NSLocalizedString(@"Tasks", @"Tasks navigation bar title");
     
-    //[self.tableView registerNib:[UINib nibWithNibName:@"GTDTaskTableViewCell" bundle:nil] forCellReuseIdentifier:@"GTDTaskTableViewCell"];
+    _fetchedController = [_dataStorage tasksFetchedResultsControllerWithDelegate:self];
     
     _dateFormatter = [[NSDateFormatter alloc] init];
     _dateFormatter.timeStyle = NSDateFormatterMediumStyle;
     _dateFormatter.dateStyle = NSDateFormatterMediumStyle;
 }
 
+- (void)dealloc {
+    self.tableView.delegate = nil;
+    self.tableView.dataSource = nil;
+    _fetchedController.delegate = nil;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *selectedIndexPath = [self.tableView indexPathForCell:sender];
+    Task *task = [_fetchedController objectAtIndexPath:selectedIndexPath];
+    
+    if (task == nil)
+        return;
+    
+    GTDTaskViewController *taskVC = segue.destinationViewController;
+    taskVC.task = task;
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [[self.fetchedController sections] count];
+    return [[_fetchedController sections] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [[[self.fetchedController sections][section] objects] count];
+    return [[[_fetchedController sections][section] objects] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -57,34 +75,13 @@
 }
 
 - (void)configureCell:(GTDTaskTableViewCell *)cell atIndexPath:(NSIndexPath *)idxPath {
-    Task *task = [self.fetchedController objectAtIndexPath:idxPath];
+    Task *task = [_fetchedController objectAtIndexPath:idxPath];
     cell.titleLabel.text = task.title;
     cell.dueDateLabel.text = [_dateFormatter stringFromDate:task.dueDate];
     cell.delegate = self;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    Task *task = [self.fetchedController objectAtIndexPath:indexPath];
-    //GTDTaskViewController *editTask = [[GTDTaskViewController alloc] initWithTask:task dataStorage:_dataStorage];
-    //[self.navigationController pushViewController:editTask animated:YES];
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
-
 #pragma mark - NSFetchedResultsController
-- (NSFetchedResultsController *)fetchedController {
-    static NSFetchedResultsController *fetchedController = nil;
-    
-    if (fetchedController == nil) {
-        fetchedController = [Task MR_fetchAllGroupedBy:nil
-                                         withPredicate:[NSPredicate predicateWithFormat:@"done == 0"]
-                                              sortedBy:@"dueDate"
-                                             ascending:YES
-                                              delegate:self];
-    }
-    
-    return fetchedController;
-}
-
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
     [self.tableView beginUpdates];
 }
@@ -131,7 +128,7 @@
 - (void)didDoneButtonPressedForCell:(GTDTaskTableViewCell *)cell {
     NSIndexPath *idxPath = [self.tableView indexPathForCell:cell];
     
-    Task *task = [self.fetchedController objectAtIndexPath:idxPath];
+    Task *task = [_fetchedController objectAtIndexPath:idxPath];
     task.done = @(YES);
     
     [_dataStorage save];

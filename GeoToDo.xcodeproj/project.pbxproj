@@ -23,18 +23,17 @@
 		842D0DB416CDAE7200606D64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 842D0DB216CDAE7200606D64 /* InfoPlist.strings */; };
 		842D0DB716CDAE7200606D64 /* GeoToDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842D0DB616CDAE7200606D64 /* GeoToDoTests.m */; };
 		842E6E9617986CBC00586714 /* GTDNotesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 842E6E9517986CBC00586714 /* GTDNotesTableViewCell.m */; };
-		842E6E9817986D3700586714 /* GTDNotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842E6E9717986D3700586714 /* GTDNotesTableViewCell.xib */; };
+		845A03DD17CBED7D00112D9B /* GTDDetailSubtitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A03DC17CBED7D00112D9B /* GTDDetailSubtitleCell.m */; };
+		845A03DE17CBED7D00112D9B /* GTDDetailSubtitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A03DC17CBED7D00112D9B /* GTDDetailSubtitleCell.m */; };
 		845A62FB178DFDF7002DCE45 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A62FA178DFDF7002DCE45 /* Task.m */; };
 		845A62FF178E0030002DCE45 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A62FE178E0027002DCE45 /* Place.m */; };
-		8473B1C817A4679900877CB9 /* GTDDetailedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B1C717A4679900877CB9 /* GTDDetailedTableViewCell.m */; };
-		8473B1C917A4679900877CB9 /* GTDDetailedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473B1C717A4679900877CB9 /* GTDDetailedTableViewCell.m */; };
 		8496C16217B198CD00639C5E /* GTDTaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8496C16117B198CD00639C5E /* GTDTaskTableViewCell.m */; };
-		8496C16617B19D2600639C5E /* GTDTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8496C16517B19D2600639C5E /* GTDTaskTableViewCell.xib */; };
 		8497F4D11794990E0066C435 /* GTDEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497F4D01794990E0066C435 /* GTDEditTableViewCell.m */; };
-		8497F4D31794992D0066C435 /* GTDEditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8497F4D21794992D0066C435 /* GTDEditTableViewCell.xib */; };
 		8498D8E617A86A4600485336 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 8498D8E517A86A4600485336 /* Globals.m */; };
 		8498D8EA17A8701000485336 /* GTDDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8498D8E917A8701000485336 /* GTDDataStorage.m */; };
 		849CEED917A1D21C0064C45D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849CEED817A1D21C0064C45D /* Media.xcassets */; };
+		849FC18117C93E7F00F8009D /* GTDDetailedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FC18017C93E7F00F8009D /* GTDDetailedTableViewCell.m */; };
+		849FC18217C93E7F00F8009D /* GTDDetailedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FC18017C93E7F00F8009D /* GTDDetailedTableViewCell.m */; };
 		84A350EB178F559900BDCD5A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A350EA178F559900BDCD5A /* MapKit.framework */; };
 		84A350F4178F59AE00BDCD5A /* GTDTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A350F2178F59AE00BDCD5A /* GTDTasksViewController.m */; };
 		84A350F7178F640D00BDCD5A /* GTDPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A350F6178F640D00BDCD5A /* GTDPlacesViewController.m */; };
@@ -84,24 +83,23 @@
 		842D0DB616CDAE7200606D64 /* GeoToDoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoToDoTests.m; sourceTree = "<group>"; };
 		842E6E9417986CBC00586714 /* GTDNotesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDNotesTableViewCell.h; sourceTree = "<group>"; };
 		842E6E9517986CBC00586714 /* GTDNotesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDNotesTableViewCell.m; sourceTree = "<group>"; };
-		842E6E9717986D3700586714 /* GTDNotesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTDNotesTableViewCell.xib; sourceTree = "<group>"; };
+		845A03DB17CBED7D00112D9B /* GTDDetailSubtitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDDetailSubtitleCell.h; sourceTree = "<group>"; };
+		845A03DC17CBED7D00112D9B /* GTDDetailSubtitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDDetailSubtitleCell.m; sourceTree = "<group>"; };
 		845A62F9178DFDF7002DCE45 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Task.h; path = DataModel/Task.h; sourceTree = "<group>"; };
 		845A62FA178DFDF7002DCE45 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Task.m; path = DataModel/Task.m; sourceTree = "<group>"; };
 		845A62FD178E0027002DCE45 /* Place.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Place.h; path = DataModel/Place.h; sourceTree = "<group>"; };
 		845A62FE178E0027002DCE45 /* Place.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Place.m; path = DataModel/Place.m; sourceTree = "<group>"; };
-		8473B1C617A4679900877CB9 /* GTDDetailedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDDetailedTableViewCell.h; sourceTree = "<group>"; };
-		8473B1C717A4679900877CB9 /* GTDDetailedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDDetailedTableViewCell.m; sourceTree = "<group>"; };
 		8496C16017B198CD00639C5E /* GTDTaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDTaskTableViewCell.h; sourceTree = "<group>"; };
 		8496C16117B198CD00639C5E /* GTDTaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDTaskTableViewCell.m; sourceTree = "<group>"; };
-		8496C16517B19D2600639C5E /* GTDTaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTDTaskTableViewCell.xib; sourceTree = "<group>"; };
 		8497F4CF1794990E0066C435 /* GTDEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDEditTableViewCell.h; sourceTree = "<group>"; };
 		8497F4D01794990E0066C435 /* GTDEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDEditTableViewCell.m; sourceTree = "<group>"; };
-		8497F4D21794992D0066C435 /* GTDEditTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTDEditTableViewCell.xib; sourceTree = "<group>"; };
 		8498D8E417A869A900485336 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
 		8498D8E517A86A4600485336 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Globals.m; sourceTree = "<group>"; };
 		8498D8E817A8701000485336 /* GTDDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDDataStorage.h; sourceTree = "<group>"; };
 		8498D8E917A8701000485336 /* GTDDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDDataStorage.m; sourceTree = "<group>"; };
 		849CEED817A1D21C0064C45D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		849FC17F17C93E7F00F8009D /* GTDDetailedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDDetailedTableViewCell.h; sourceTree = "<group>"; };
+		849FC18017C93E7F00F8009D /* GTDDetailedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDDetailedTableViewCell.m; sourceTree = "<group>"; };
 		84A350EA178F559900BDCD5A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		84A350F1178F59AE00BDCD5A /* GTDTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTDTasksViewController.h; path = UI/GTDTasksViewController.h; sourceTree = "<group>"; };
 		84A350F2178F59AE00BDCD5A /* GTDTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTDTasksViewController.m; path = UI/GTDTasksViewController.m; sourceTree = "<group>"; };
@@ -259,10 +257,10 @@
 				84BA1B1C17C150C600E80B0F /* GTDMainViewController.m */,
 				84A350F1178F59AE00BDCD5A /* GTDTasksViewController.h */,
 				84A350F2178F59AE00BDCD5A /* GTDTasksViewController.m */,
-				84A350F5178F640D00BDCD5A /* GTDPlacesViewController.h */,
-				84A350F6178F640D00BDCD5A /* GTDPlacesViewController.m */,
 				840B4307179353AA00C5D923 /* GTDTaskViewController.h */,
 				840B4308179353AA00C5D923 /* GTDTaskViewController.m */,
+				84A350F5178F640D00BDCD5A /* GTDPlacesViewController.h */,
+				84A350F6178F640D00BDCD5A /* GTDPlacesViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -270,17 +268,16 @@
 		8497F4CE179498E80066C435 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				849FC17F17C93E7F00F8009D /* GTDDetailedTableViewCell.h */,
+				849FC18017C93E7F00F8009D /* GTDDetailedTableViewCell.m */,
 				8497F4CF1794990E0066C435 /* GTDEditTableViewCell.h */,
 				8497F4D01794990E0066C435 /* GTDEditTableViewCell.m */,
-				8497F4D21794992D0066C435 /* GTDEditTableViewCell.xib */,
 				842E6E9417986CBC00586714 /* GTDNotesTableViewCell.h */,
 				842E6E9517986CBC00586714 /* GTDNotesTableViewCell.m */,
-				842E6E9717986D3700586714 /* GTDNotesTableViewCell.xib */,
-				8473B1C617A4679900877CB9 /* GTDDetailedTableViewCell.h */,
-				8473B1C717A4679900877CB9 /* GTDDetailedTableViewCell.m */,
 				8496C16017B198CD00639C5E /* GTDTaskTableViewCell.h */,
 				8496C16117B198CD00639C5E /* GTDTaskTableViewCell.m */,
-				8496C16517B19D2600639C5E /* GTDTaskTableViewCell.xib */,
+				845A03DB17CBED7D00112D9B /* GTDDetailSubtitleCell.h */,
+				845A03DC17CBED7D00112D9B /* GTDDetailSubtitleCell.m */,
 			);
 			name = Cells;
 			path = UI/Cells;
@@ -402,10 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				842D0D9216CDAE7100606D64 /* InfoPlist.strings in Resources */,
-				8497F4D31794992D0066C435 /* GTDEditTableViewCell.xib in Resources */,
-				8496C16617B19D2600639C5E /* GTDTaskTableViewCell.xib in Resources */,
 				849CEED917A1D21C0064C45D /* Media.xcassets in Resources */,
-				842E6E9817986D3700586714 /* GTDNotesTableViewCell.xib in Resources */,
 				84BA1B1917C14B1B00E80B0F /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +454,6 @@
 				845A62FF178E0030002DCE45 /* Place.m in Sources */,
 				84BA1B2217C16AFE00E80B0F /* GTDFrontViewSegue.m in Sources */,
 				84A350F4178F59AE00BDCD5A /* GTDTasksViewController.m in Sources */,
-				8473B1C817A4679900877CB9 /* GTDDetailedTableViewCell.m in Sources */,
 				84A350F7178F640D00BDCD5A /* GTDPlacesViewController.m in Sources */,
 				84BA1B1D17C150C600E80B0F /* GTDMainViewController.m in Sources */,
 				845A62FB178DFDF7002DCE45 /* Task.m in Sources */,
@@ -472,7 +465,9 @@
 				8498D8EA17A8701000485336 /* GTDDataStorage.m in Sources */,
 				84E85ABA17A31B2E00D8634C /* GTDTextView.m in Sources */,
 				84BA1B2617C1795600E80B0F /* GTDLeftViewSegue.m in Sources */,
+				849FC18117C93E7F00F8009D /* GTDDetailedTableViewCell.m in Sources */,
 				842D0D9816CDAE7100606D64 /* GTDAppDelegate.m in Sources */,
+				845A03DD17CBED7D00112D9B /* GTDDetailSubtitleCell.m in Sources */,
 				842D0DA116CDAE7100606D64 /* GeoToDo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,8 +478,9 @@
 			files = (
 				842D0DB716CDAE7200606D64 /* GeoToDoTests.m in Sources */,
 				84BA1B1E17C150C600E80B0F /* GTDMainViewController.m in Sources */,
+				845A03DE17CBED7D00112D9B /* GTDDetailSubtitleCell.m in Sources */,
 				84BA1B2317C16AFE00E80B0F /* GTDFrontViewSegue.m in Sources */,
-				8473B1C917A4679900877CB9 /* GTDDetailedTableViewCell.m in Sources */,
+				849FC18217C93E7F00F8009D /* GTDDetailedTableViewCell.m in Sources */,
 				84BA1B2717C1795600E80B0F /* GTDLeftViewSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

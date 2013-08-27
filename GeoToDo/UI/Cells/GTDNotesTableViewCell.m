@@ -33,15 +33,6 @@ static const CGFloat kBaseHeight = 38.f;
     
     self.textView.placeholder = NSLocalizedString(@"Placeholder", @"Placeholder text for the notes text view in the new task screen");
 }
-
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        [self _init];
-    }
-    return self;
-}
-
 - (void)awakeFromNib {
     [super awakeFromNib];
     
@@ -51,12 +42,12 @@ static const CGFloat kBaseHeight = 38.f;
 #pragma mark - UITextViewDelegate
 
 - (void)textViewDidChange:(UITextView *)textView {
-    if (CGRectGetHeight(self.textView.frame) != self.textView.contentSize.height) {
-        CGRect frame = self.textView.frame;
-        frame.size.height = self.textView.contentSize.height;
-        self.textView.frame = frame;
+    CGFloat textViewHeight = textView.textInputView.frame.size.height;
+    
+    if (CGRectGetHeight(self.textView.frame) != textViewHeight) {
+        self.textView.height = textViewHeight;
         
-        CGFloat newHeight = CGRectGetHeight(frame) + kCellOffsetsAndTitleHeight;
+        CGFloat newHeight = textViewHeight + kCellOffsetsAndTitleHeight;
         [self.delegate notesCell:self didChangeHeight:newHeight];
     }
 }

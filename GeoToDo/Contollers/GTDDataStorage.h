@@ -20,6 +20,8 @@
 
 - (NSArray *)tasks;
 
+- (NSFetchedResultsController *)tasksFetchedResultsControllerWithDelegate:(id<NSFetchedResultsControllerDelegate>)delegate;
+
 - (void)saveAsyncWithCompletion:(void(^)(BOOL success, NSError *error))completion;
 - (void)save;
 

@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @class Task;
-@class GTDDataStorage;
 
 @interface GTDTaskViewController : UITableViewController
+
+@property(nonatomic,strong) Task *task;
 
 @end

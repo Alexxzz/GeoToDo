@@ -9,8 +9,8 @@
 #import "GTDTaskViewController.h"
 #import "GTDEditTableViewCell.h"
 #import "GTDNotesTableViewCell.h"
-#import "GTDDetailedTableViewCell.h"
 #import "GTDPlacesViewController.h"
+#import "GTDDetailedTableViewCell.h"
 #import "GTDTextView.h"
 #import "GTDDataStorage.h"
 #import "Task.h"
@@ -21,8 +21,6 @@ typedef NS_ENUM(NSUInteger, eNewTaskCell) {
     eNewTaskCell_notes,
     eNewTaskCell_place,
     eNewTaskCell_date,
-    
-    eNewTaskCell_count
 };
 
 @interface GTDTaskViewController () <GTDNotesTableViewCellDelegate>
@@ -40,14 +38,13 @@ typedef NS_ENUM(NSUInteger, eNewTaskCell) {
     
     NSDateFormatter *_dateFormatter;
     
-    Task *_task;
     GTDDataStorage *_dataStorage;
 }
 
 - (void)registerCellClass:(Class)class {
-    NSString *cellClass = NSStringFromClass(class);
-    [self.tableView registerNib:[UINib nibWithNibName:cellClass bundle:nil]
-         forCellReuseIdentifier:cellClass];
+    NSString *classStr = NSStringFromClass(class);
+    [self.tableView registerNib:[UINib nibWithNibName:classStr bundle:nil]
+         forCellReuseIdentifier:classStr];
 }
 
 - (void)viewDidLoad {
@@ -81,9 +78,6 @@ typedef NS_ENUM(NSUInteger, eNewTaskCell) {
                                                  name:UIKeyboardDidHideNotification
                                                object:nil];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                                                           target:self
-                                                                                           action:@selector(onDoneButton:)];
     _dateFormatter = [[NSDateFormatter alloc] init];
     _dateFormatter.dateStyle = NSDateFormatterShortStyle;
     _dateFormatter.timeStyle = NSDateFormatterShortStyle;
@@ -104,16 +98,6 @@ typedef NS_ENUM(NSUInteger, eNewTaskCell) {
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return eNewTaskCell_count;
-}
-
 - (NSString *)cellIdForIndexPath:(NSIndexPath *)indexPath {
     NSString *cellId = nil;
     
@@ -225,34 +209,22 @@ typedef NS_ENUM(NSUInteger, eNewTaskCell) {
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    switch (indexPath.row) {
-        case eNewTaskCell_place: {
-            GTDPlacesViewController *places = [[GTDPlacesViewController alloc] init];
-            [self.navigationController pushViewController:places animated:YES];
-            break;
+    if (indexPath.row == eNewTaskCell_date) {
+        if (_keyboardVisible) {
+            [self.view endEditing:YES];
+            
+            [UIView animateWithDuration:gDefaultAnimationTime
+                                  delay:gDefaultAnimationTime
+                                options:0
+                             animations:nil
+                             completion: ^(BOOL b){
+                                 [self showDatePicker];
+                             }];
+        } else {
+            [self showDatePicker];
         }
-            
-        case eNewTaskCell_date: {
-            
-            if (_keyboardVisible) {
-                [self.view endEditing:YES];
-                
-                [UIView animateWithDuration:gDefaultAnimationTime
-                                      delay:gDefaultAnimationTime
-                                    options:0
-                                 animations:nil
-                                 completion: ^(BOOL b){
-                                     [self showDatePicker];
-                                 }];
-            } else {
-                [self showDatePicker];
-            }
-            
-            break;
-        }
-            
-        default:
-            break;
+    } else if (indexPath.row == eNewTaskCell_place) {
+        [self performSegueWithIdentifier:@"PushPlacesVC" sender:self];
     }
 }
 
@@ -261,7 +233,7 @@ typedef NS_ENUM(NSUInteger, eNewTaskCell) {
     return [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:type inSection:0]];
 }
 
-- (void)onDoneButton:(id)sender {
+- (IBAction)onDone:(id)sender {
     if ([_datePicker superview]) {
         [self hideDatePicker];
     } else {

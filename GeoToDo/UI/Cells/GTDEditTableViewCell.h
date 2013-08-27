@@ -10,6 +10,6 @@
 
 @interface GTDEditTableViewCell : UITableViewCell
 
-@property(nonatomic,assign) IBOutlet UITextField *textField;
+@property(nonatomic,weak) IBOutlet UITextField *textField;
 
 @end
